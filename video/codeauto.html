@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="bootstrap.min.css" type="text/css" rel="stylesheet">
+	</head>
+	<style type="text/css">
+		img{
+			display: block;
+			max-width:100%;
+			height: auto;
+		}
+
+	</style>
+	<body>
+		<div class="container"  style="position: relative; padding-left: 450px; margin-top: 50px;">
+			<div class="row center-block">
+				<div style="border: 1px solid #CCCCCC; display: inline-block;border-radius: 5px 0 0 5px; margin-bottom: 5px;">
+					<div style="display: inline-block;width: 45px;text-align: center; border-right: 1px solid #CCCCCC;">宽</div>
+					<input type="text" class="input1" style="border: 0; width: 143px;"/>
+					<button class="but" style="border: 1px solid;color: red;width: 50px;background-color: white;">完成</button>
+				</div>
+				<div>
+					<img src="1-01.jpg" alt="" class="img1 img-responsive"/>
+					<img src="12.png" style="position: absolute; top: 32%;" class="img2 img-responsive"/>
+				</div>
+				<button style="border: 0; background-color: #5BB85B; color: white; height: 25px; width: 50px; margin-top: 5px;margin-left: 200px;">打印</button>
+			</div>
+		</div>
+		<div>
+			<span>图片宽</span>
+			<select name="">
+				<option value="A1">A1</option>
+				<option value="A2">A2</option>
+				<option value="A3">A3</option>
+				<option value="A4">A4</option>
+			</select>
+		</div>
+		<div style="border: 1px solid #CCCCCC; display: inline-block;border-radius: 5px 0 0 5px; margin-bottom: 5px; margin-left: 200px;">
+			<div style="display: inline-block;width: 45px;text-align: center; border-right: 1px solid #CCCCCC;">图片宽</div>
+			<select name="" style="text-align: center; border: 0; width: 200px; outline: none;">
+				<option value="A1">A1</option>
+				<option value="A2">A2</option>
+				<option value="A3">A3</option>
+				<option value="A4">A4</option>
+			</select>
+		</div>
+	</body>
+	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('.but').click(function(){
+			$('.img1').css('width',$('.input1').val())
+			$('.img2').css('width',$('.input1').val())
+
+			console.log($('.input1').val())
+		})
+	</script>
+	    
+</html>
+
+
+
+
+
+
